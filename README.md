@@ -1,3 +1,5 @@
+CarShare app v 0.1.0 - 02.05.2024
+
 -Svaki prozor aplikacije ima prefix App
 
 -Stilovi i vizualno uređenje aplikacije nalazi se u datoteci styles.js
@@ -12,5 +14,7 @@
 	-npm install @react-navigation/native-stack
 	-npm install react-native-linear-gradient
 	-npm install axios
+
+-Sve ikonice će ubrzo biti prebačene u vektorske formate da zauzimanju manje mjesta i budu u većoj kvaliteti (moguće da i jesu kada ovo čitate, najnovija verzija koda je na GitHubu)
 
 Link za GitHub projekt sa novijim kodom - https://github.com/KristijanRancic1/CarShare 

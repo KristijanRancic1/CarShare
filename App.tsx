@@ -1,5 +1,5 @@
 import React from 'react';
-import AppNavigator from './App_Navigator'; // Ensure the path matches where your AppNavigator file is located
+import AppNavigator from './App_Navigator'; 
 
 const App = () => {
   return <AppNavigator />;

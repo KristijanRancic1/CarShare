@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Button } from 'react-native';
-import { getTestMessage } from './apiService'; // Path to your service file
+import { getTestMessage } from './apiService'; 
 
 const TestComponent = () => {
   const [message, setMessage] = useState('');
