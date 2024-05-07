@@ -3,13 +3,26 @@ import { Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 
-function Kamo() {
+
+function Obavijesti({ navigation }) {
   return (
     <LinearGradient
-      colors={['#FFFFFF', '#000']} 
-      style={styles.viewmain}
-    >
+      colors={['#FFFFFF', '#D9EBF8']} 
+      style={styles.viewmain}>
 
+      <View style={styles.obavijestiView}>
+      <Text style={styles.obavijestiText}>Obavijesti</Text>
+      </View>
+      <View style={styles.obavijestiPopis}>
+        <View style={styles.obavijestiPopisText}>
+        <Text style={styles.obavijestiPopisTextNaslov}>Radovi na cesti</Text>
+        <Text style={styles.obavijestiPopisTextSadrzaj}>U ponedjeljak, 29. travnja odvijat će se radovi na Slavonskoj aveniji...</Text>
+        </View>
+        <View style={styles.obavijestiPopisText}>
+        <Text style={styles.obavijestiPopisTextNaslov}>Hvala što si instalirao aplikaciju CarShare!</Text>
+        <Text style={styles.obavijestiPopisTextSadrzaj}>Tu smo da ti pomognemo! Uz nas ćeš moći uštedjeti...</Text>
+        </View>
+      </View>
 
       {/*FOOTER --------------------------------------------------------------------------*/}
       <View style={styles.Footer}> 
@@ -32,4 +45,4 @@ function Kamo() {
     </LinearGradient>
   );
 };
-export default Kamo;
+export default Obavijesti;

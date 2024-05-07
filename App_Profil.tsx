@@ -3,13 +3,13 @@ import { Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 
-function Kamo() {
+function DM({navigation}) {
   return (
     <LinearGradient
-      colors={['#FFFFFF', '#000']} 
+      colors={['#FFFFFF', '#D9EBF8']} 
       style={styles.viewmain}
     >
-
+      <Text style={styles.text}>PROFIL</Text> 
 
       {/*FOOTER --------------------------------------------------------------------------*/}
       <View style={styles.Footer}> 
@@ -32,4 +32,4 @@ function Kamo() {
     </LinearGradient>
   );
 };
-export default Kamo;
+export default DM;

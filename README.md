@@ -14,6 +14,7 @@ CarShare app v 0.1.0 - 02.05.2024
 	-npm install @react-navigation/native-stack
 	-npm install react-native-linear-gradient
 	-npm install axios
+	npm install @react-native-community/datetimepicker --save
 
 -Sve ikonice će ubrzo biti prebačene u vektorske formate da zauzimanju manje mjesta i budu u većoj kvaliteti (moguće da i jesu kada ovo čitate, najnovija verzija koda je na GitHubu)
 

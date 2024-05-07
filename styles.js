@@ -1,7 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  
+    Text:{
+      fontFamily: 'Montserrat',
+    }, 
     header: {
       flexDirection: 'row',
       justifyContent: 'space-between',
@@ -219,6 +221,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 2,
         marginLeft:10,
+        marginTop:'20%'
       },
       switchOn: {
         backgroundColor: '#FFBA42',
@@ -241,7 +244,8 @@ export default StyleSheet.create({
       },
       TjedniRasporedText:{
         fontSize:19,
-        fontWeight:'500'
+        fontWeight:'500',
+        width:'60%',
       },
       OnOff:{
         flexDirection:'row'
@@ -275,7 +279,57 @@ export default StyleSheet.create({
         textAlignVertical:'center',
         marginTop:20,
         marginBottom:10,
-      }
+      },
+      obavijestiText:{
+        fontSize: 28,
+        fontWeight: '800',
+        color: '#0D2D42',
+        textAlign: 'left',
+      },
+      obavijestiView:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 30,
+        paddingBottom: 0,
+
+      },
+      obavijestiPopis:{
+        flexDirection: 'coloumn',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 30,
+      },
+      obavijestiPopisText:{
+        fontSize: 16,
+        fontWeight: '500',
+        color: '#0D2D42',
+        textAlign: 'left',
+        backgroundColor: 'white',
+        elevation: 10,
+        margin: 15,
+        width: '100%',
+        borderRadius: 19,
+      },
+      obavijestiPopisTextNaslov:{
+        padding: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
+        fontSize: 20,
+        fontWeight: '700',
+        color: '#0D2D42',
+        textAlign: 'left',
+      },
+      obavijestiPopisTextSadrzaj:{
+        padding: 10,
+        fontSize: 16,
+        fontWeight: '500',
+        color: '#0D2D42',
+        textAlign: 'left',
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingBottom: 20,
+      },
 });
 
   

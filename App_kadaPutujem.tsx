@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 
-function Kamo({ navigation }) {
+function KadaPutujem({ navigation }) {
     const [isEnabled, setIsEnabled] = useState(false);
+    const [date, setDate] = useState(new Date());
 
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+
   return (
     <LinearGradient
       colors={['#FFFFFF', '#D9EBF8']} 
@@ -19,10 +22,11 @@ function Kamo({ navigation }) {
 
       </View>
       <View style={styles.DatePicker}>
-        <Text style={styles.Date}>22.04.2024.</Text>
-        <View style={styles.HR} />
-        <Text style={styles.Time}>16:30</Text>
-      </View>
+                <Text style={styles.Date}>{date.toLocaleDateString()}</Text>
+                <View style={styles.HR} />
+                <Text style={styles.Time}>{date.toLocaleTimeString()}</Text>
+            </View>
+
       <View style={styles.TjedniRaspored}>
         <View style={styles.OnOff}>
           <Text style={styles.TjedniRasporedText}>
@@ -48,20 +52,30 @@ function Kamo({ navigation }) {
       <View style={styles.URedu}>
         <TouchableOpacity onPress={() => navigation.navigate('Home')}>
         <Text style={styles.UReduText}>
-          U redu
+          Odaberi
         </Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.Footer}>
+
+      {/*FOOTER --------------------------------------------------------------------------*/}
+      <View style={styles.Footer}> 
       <TouchableOpacity onPress={() => navigation.navigate('DM')}>
       <Image source={require('./components/chatikona_default.png')} style={styles.FooterIkone35x35} />
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Event')}>
       <Image source={require('./components/eventiikona_default.png')} style={styles.FooterIkoneEVENT} />
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
       <Image source={require('./components/autićikona.png')} style={styles.FooterIkoneCAR} />
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Statistika')}>
       <Image source={require('./components/analiticsikona.png')} style={styles.FooterIkone35x35} />
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('MojProfil')}>
       <Image source={require('./components/accountikona.png')} style={styles.FooterIkonePROFIL} />
+      </TouchableOpacity>
       </View>
     </LinearGradient>
   );
 };
-export default Kamo;
+export default KadaPutujem;
