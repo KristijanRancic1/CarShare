@@ -385,8 +385,8 @@ export default StyleSheet.create({
       },
       ButtonKarte:{
         borderRadius: 20,
-        backgroundColor: '#0D2D42',
-        color: 'white',
+        backgroundColor: '#BAEBE8',
+        color: '#0D2D42',
         textAlignVertical: 'center',
         padding: 10,
         elevation: 5,
