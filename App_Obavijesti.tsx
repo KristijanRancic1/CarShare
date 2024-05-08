@@ -13,14 +13,18 @@ function Obavijesti({ navigation }) {
       <View style={styles.obavijestiView}>
       <Text style={styles.obavijestiText}>Obavijesti</Text>
       </View>
-      <View style={styles.obavijestiPopis}>
+      <View style={styles.obavijestiPopis}>  
         <View style={styles.obavijestiPopisText}>
+        <TouchableOpacity onPress={() => navigation.navigate('ObavijestiSelected1')}>
         <Text style={styles.obavijestiPopisTextNaslov}>Radovi na cesti</Text>
         <Text style={styles.obavijestiPopisTextSadrzaj}>U ponedjeljak, 29. travnja odvijat će se radovi na Slavonskoj aveniji...</Text>
+        </TouchableOpacity>
         </View>
         <View style={styles.obavijestiPopisText}>
+        <TouchableOpacity onPress={() => navigation.navigate('ObavijestiSelected2')}>
         <Text style={styles.obavijestiPopisTextNaslov}>Hvala što si instalirao aplikaciju CarShare!</Text>
         <Text style={styles.obavijestiPopisTextSadrzaj}>Tu smo da ti pomognemo! Uz nas ćeš moći uštedjeti...</Text>
+        </TouchableOpacity>
         </View>
       </View>
 

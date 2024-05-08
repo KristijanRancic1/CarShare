@@ -300,6 +300,18 @@ export default StyleSheet.create({
         alignItems: 'center',
         padding: 30,
       },
+      obavijestiPopisTextSelected:{
+        fontSize: 16,
+        fontWeight: '500',
+        color: '#0D2D42',
+        textAlign: 'left',
+        backgroundColor: 'white',
+        elevation: 10,
+        margin: 15,
+        width: '100%',
+        borderRadius: 19,
+        height: '84%'
+      },
       obavijestiPopisText:{
         fontSize: 16,
         fontWeight: '500',

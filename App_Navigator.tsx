@@ -11,6 +11,8 @@ import Obavijesti from './App_Obavijesti';
 import Event from './App_Eventi';
 import Statistika from './App_Statistika';
 import MojProfil from './App_Profil';
+import ObavijestiSelected1 from './App_Obavijest_selected_preview1';
+import OvavijestiSelected2 from './App_Obavijest_selected_preview2';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +30,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Event" component={Event}/>
         <Stack.Screen name="Statistika" component={Statistika}/>
         <Stack.Screen name="MojProfil" component={MojProfil}/>
+        <Stack.Screen name="ObavijestiSelected1" component={ObavijestiSelected1}/>
+        <Stack.Screen name="ObavijestiSelected2" component={OvavijestiSelected2}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
