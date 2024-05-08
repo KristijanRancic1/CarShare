@@ -23,7 +23,7 @@ function DM({navigation}) {
         </View>
         <View style={styles.EventiButtons}>
           <TouchableOpacity onPress={() => Linking.openURL('https://www.internationaldanceopen.com/events')}>
-          <Text style={styles.Button}>
+          <Text style={styles.ButtonKarte}>
           Karte
           </Text>
           </TouchableOpacity>
@@ -49,7 +49,7 @@ function DM({navigation}) {
         </View>
         <View style={styles.EventiButtons}>
           <TouchableOpacity onPress={() => Linking.openURL('https://www.entrio.hr/event/jazzhr-festival-2024-17197')}>
-          <Text style={styles.Button}>
+          <Text style={styles.ButtonKarte}>
           Karte
           </Text>
           </TouchableOpacity>

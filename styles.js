@@ -383,6 +383,14 @@ export default StyleSheet.create({
         padding: 10,
         elevation: 5,
       },
+      ButtonKarte:{
+        borderRadius: 20,
+        backgroundColor: '#0D2D42',
+        color: 'white',
+        textAlignVertical: 'center',
+        padding: 10,
+        elevation: 5,
+      },
       headerProfile:{
         flexDirection: 'row',
         justifyContent: 'space-around',

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Button } from 'react-native';
 import { getTestMessage } from './apiService'; 
+import styles from './styles';
 
 const TestComponent = () => {
   const [message, setMessage] = useState('');
@@ -20,8 +21,8 @@ const TestComponent = () => {
   }, []);
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>{message}</Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding:20}}>
+      <Text style={styles.obavijestiView}>{message}</Text>
       <Button title="Reload" onPress={fetchMessage} />
     </View>
   );
