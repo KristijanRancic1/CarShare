@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Button, StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     Text:{
@@ -341,6 +341,89 @@ export default StyleSheet.create({
         paddingLeft: 20,
         paddingRight: 20,
         paddingBottom: 20,
+      },
+      EventiPopisTextDatum:{
+        paddingLeft: 20,
+        paddingRight: 20,
+        fontSize: 16,
+        fontWeight: '400',
+        color: '#0D2D42',
+        textAlign: 'left',
+      },
+      EventiLokacija:{
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 30,
+      },
+      EventiLokacijaIkona:{
+        width: 25,
+        height: 33,
+      },
+      EvenitPopisTextLokacija:{
+        paddingLeft: 15,
+        paddingRight: 20,
+        fontSize: 16,
+        fontWeight: '400',
+        color: '#0D2D42',
+        textAlign: 'left',
+      },
+      EventiButtons:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingLeft:30,
+        paddingRight:30,
+        paddingBottom:30
+      },
+      Button:{
+        borderRadius: 20,
+        backgroundColor: '#0D2D42',
+        color: 'white',
+        textAlignVertical: 'center',
+        padding: 10,
+        elevation: 5,
+      },
+      headerProfile:{
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        padding: 30,
+      },
+      settingsIcon:{
+        width: 30,
+        height: 33,
+        position: 'absolute',
+        right: 30,
+        top: 30,
+      },
+      textProfil:{
+        fontSize: 24,
+        fontWeight: '800',
+        color: '#0D2D42',
+        textAlign: 'left',
+      },
+      profileImageContainer:{
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        paddingTop: 30,
+        paddingLeft: 30,
+        paddingRight: 30,
+      },
+      profileImage:{
+        width: 150,
+        height: 150,
+        borderRadius: 75,
+        backgroundColor: '#0D2D42',
+        textAlignVertical: 'center',
+        textAlign: 'center',
+        color: 'white',
+      },
+      ImePrezime:{
+        fontSize: 24,
+        fontWeight: '800',
+        color: '#0D2D42',
+        textAlign: 'center',
       },
 });
 

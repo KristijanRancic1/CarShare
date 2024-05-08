@@ -20,7 +20,7 @@ function Kamo() {
       <Image source={require('./components/eventiikona_default.png')} style={styles.FooterIkoneEVENT} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-      <Image source={require('./components/autićikona.png')} style={styles.FooterIkoneCAR} />
+      <Image source={require('./components/auticikona-Active.png')} style={styles.FooterIkoneCAR} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Statistika')}>
       <Image source={require('./components/analiticsikona.png')} style={styles.FooterIkone35x35} />
