@@ -4,8 +4,6 @@ CarShare app v 0.1.0 - 02.05.2024
 
 -Stilovi i vizualno uređenje aplikacije nalazi se u datoteci styles.js
 
--App_DM.tsx funkcionirao je samo kao test gradijenta i nema nikakav koristan kod u sebi
-
 -App_backendtest.tsx i apiService.js se koriste trenutno kao testno povezivanje na moje lokalno računalo kao server
 
 -Ako želite pokrenuti aplikaciju node_modules koji su korišteni za izradu su:
