@@ -33,7 +33,7 @@ function DM({navigation}) {
 
     <View style={styles.containerVoznje}>
       <View style={styles.rowVoznje}>
-        <Image source={require('./components/putnik.png')} style={styles.imageVoznje} />
+        <Image source={require('./components/putnik.png')} style={styles.imageVoznje2} />
         <Text style={styles.glavniTekstVoznje}>Dubrava - Prečko</Text>
       </View>
       <View style={styles.redoviVoznje}>
