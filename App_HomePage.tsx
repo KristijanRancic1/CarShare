@@ -64,7 +64,7 @@ const HomePage = ({ navigation }) => {
 
       {/*FOOTER --------------------------------------------------------------------------*/}
       <View style={styles.Footer}> 
-      <TouchableOpacity onPress={() => navigation.navigate('DM')}>
+      <TouchableOpacity onPress={() => navigation.navigate('RegisterTemp')}>
       <Image source={require('./components/chatikona_default.png')} style={styles.FooterIkone35x35} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Event')}>
