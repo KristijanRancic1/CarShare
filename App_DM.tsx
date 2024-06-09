@@ -6,7 +6,7 @@ import styles from './styles';
 function DM({navigation}) {
   return (
     <LinearGradient
-      colors={['#FFFFFF', '#D9EBF8']} 
+      colors={['#FFFFFF', '#BCE3FF']} 
       style={styles.viewmain}
     >
       <Text style={styles.text}>DM</Text> 

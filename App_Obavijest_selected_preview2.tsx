@@ -7,7 +7,7 @@ import styles from './styles';
 function Obavijesti({ navigation }) {
   return (
     <LinearGradient
-      colors={['#FFFFFF', '#D9EBF8']} 
+      colors={['#FFFFFF', '#BCE3FF']} 
       style={styles.viewmain}>
 
       <View style={styles.obavijestiPopis}>

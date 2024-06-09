@@ -41,7 +41,7 @@ export default StyleSheet.create({
     vozacputniktext: {
       fontSize: 16, 
       fontWeight: '500',
-      color: '#000', 
+      color: '#0D2D42', 
       width: 150,
       height: 150,
       textAlign: 'center',
@@ -134,7 +134,7 @@ export default StyleSheet.create({
       FooterIkoneCAR: {
         width: 68.4,
         height: 60,
-        marginTop:-50
+        
       },
       FooterIkonePROFIL: {
         width: 42,
@@ -285,6 +285,8 @@ export default StyleSheet.create({
         color: '#0D2D42',
         textAlign: 'left',
       },
+
+
       obavijestiView:{
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -293,12 +295,44 @@ export default StyleSheet.create({
         paddingBottom: 0,
 
       },
+
+      ciljeviText:{
+        fontSize: 22,
+        fontWeight: '600',
+        color: '#0D2D42',
+        textAlign: 'left',
+      },
+
+      
+      ciljeviView:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 30,
+        paddingTop: 40,
+        paddingBottom:10,
+
+      },
+
+      aktivnostiView:{
+        
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 30,
+        paddingTop: 40,
+        paddingBottom:10,
+
+      },
       obavijestiPopis:{
         flexDirection: 'coloumn',
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: 30,
       },
+
+      
+
       obavijestiPopisTextSelected:{
         fontSize: 16,
         fontWeight: '500',
@@ -372,22 +406,22 @@ export default StyleSheet.create({
         alignItems: 'center',
         paddingLeft:30,
         paddingRight:30,
-        paddingBottom:30
+        paddingBottom:30,
       },
       Button:{
-        borderRadius: 20,
+        borderRadius: 30,
         backgroundColor: '#0D2D42',
         color: 'white',
         textAlignVertical: 'center',
-        padding: 10,
+        padding: 15,
         elevation: 5,
       },
       ButtonKarte:{
-        borderRadius: 20,
+        borderRadius: 30,
         backgroundColor: '#BAEBE8',
         color: '#0D2D42',
         textAlignVertical: 'center',
-        padding: 10,
+        padding: 15,
         elevation: 5,
       },
       headerProfile:{
@@ -577,6 +611,87 @@ export default StyleSheet.create({
         marginTop: 5,
         textAlign: 'center',
       },
+
+      boxContainerStatistika: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: 10,
+      },
+      boxStatistika: {
+        backgroundColor: '#FFFFFF',
+        borderRadius: 15,
+        padding: 20,
+        margin: 10,
+        flex: 1,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 2,
+        elevation: 5,
+        justifyContent: 'center', 
+        alignItems: 'center',
+        
+      },
+      boxHeaderStatistika: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: 10,
+      },
+      boxIconStatistika: {
+        width:32,
+        height: 32,
+      },
+      boxTitleStatistika: {
+        fontSize: 20,
+        fontWeight: '600',
+        color: '#178E82',
+        marginLeft: 10,
+        
+      },
+      boxTextStatistika: {
+        fontSize: 18,
+        fontWeight: '400',
+        color: '#0D2D42',
+        
+
+        
+        
+      },
+
+      statistikaGraf: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
+      statistikaGrafimage: {
+        width: 380, 
+        height: 380, 
+        marginTop: -100,
+      },
+
+      ciljButton: {
+        width: 30, 
+        height: 30,
+        borderRadius: 10, 
+        backgroundColor: '#BBECE9', 
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 2,
+        elevation: 5,
+      },
+
+      plusImage:{
+      width:18,
+      height:18,
+
+      }
+      
+      
+      
+      
       
 });
 
