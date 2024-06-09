@@ -429,13 +429,14 @@ export default StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         padding: 30,
+        
       },
       settingsIcon:{
         width: 30,
         height: 33,
         position: 'absolute',
         right: 30,
-        top: 30,
+        top:-60,
       },
       textProfil:{
         fontSize: 24,
@@ -687,12 +688,143 @@ export default StyleSheet.create({
       width:18,
       height:18,
 
-      }
+      },
       
+
+      userProfileRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 30,
+        paddingBottom:10,
+        position: 'relative', 
+      },
+      profileImagechat: {
+        width: 55,
+        height: 55,
+        borderRadius: 20,
+        marginRight: 12,
+      },
+      userInfo: {
+        flex: 1,
+        marginTop:-10,
+      },
+      userName: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginBottom: 4,
+        color: '#0D2D42',
+      },
+      userName2: {
+        fontSize: 20,
+        color: '#0D2D42',
+      },
+      messageContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+      },
+      messageIcon: {
+        width: 14,
+        height: 14,
+        marginRight: 8,
+      },
+      message: {
+        fontSize: 16,
+        color: '#0D2D42',
+      },
+      messageTime: {
+        position: 'absolute',
+        top:30, 
+        right: 30, 
+        fontSize: 13,
+        color: '#8C8C8C',},
+
+
+        containerProfil: {
+          flexDirection: 'row',
+          justifyContent: 'space-around',
+          padding: 30,
+          paddingTop:50,
+        },
+        imageContainerProfil: {
+          alignItems: 'center',
+        },
+       
+        imageTextProfil: {
+          fontSize: 18,
+          color: '#0D2D42',
+          marginTop:8,
+        },
+      imageProfil:{
+        color: '#0D2D42',
       
-      
-      
-      
+      },
+      starIcon: {
+        width: 20,
+        height: 20,
+        marginRight: 5,
+        marginTop:5,
+      },
+
+
+      containerStar: {
+        flexDirection: 'row',
+        alignItems: 'center',
+      },
+     
+
+
+      containerProfil2: {
+        padding:30,
+        paddingTop:10,
+      },
+      redProfil: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+        padding:6,
+      },
+      tekstProfil: {
+        fontSize: 20,
+        color: '#0D2D42',
+        fontWeight:'400',
+      },
+      strelicaProfil: {
+        width: 12,
+        height: 22,
+      },
+
+
+
+      containerVoznje: {
+        
+        padding:30,
+      },
+      rowVoznje: {
+        flexDirection: 'row',
+        paddingTop:10,
+      },
+      imageVoznje: {
+        width: 50,
+        height: 50,
+        marginRight: 10,
+      },
+      glavniTekstVoznje: {
+        fontSize: 20,
+        fontWeight: '500',
+        color: '#0D2D42',
+        marginTop:7,
+        marginLeft:5,
+      },
+      redoviVoznje: {
+        marginTop: 10,
+      },
+      TekstVoznje: {
+        fontSize: 16,
+        color: '#0D2D42',
+        marginBottom: 5,
+        marginLeft:65,
+      },
 });
 
 
