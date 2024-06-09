@@ -797,7 +797,7 @@ export default StyleSheet.create({
 
 
       containerVoznje: {
-        
+        paddingTop:10,
         padding:30,
       },
       rowVoznje: {
@@ -809,6 +809,11 @@ export default StyleSheet.create({
         height: 50,
         marginRight: 10,
       },
+      imageVoznje2: {
+        width: 40,
+        height: 50,
+        marginRight: 10,
+      },
       glavniTekstVoznje: {
         fontSize: 20,
         fontWeight: '500',
@@ -816,9 +821,7 @@ export default StyleSheet.create({
         marginTop:7,
         marginLeft:5,
       },
-      redoviVoznje: {
-        marginTop: 10,
-      },
+      
       TekstVoznje: {
         fontSize: 16,
         color: '#0D2D42',
