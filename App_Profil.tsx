@@ -21,10 +21,13 @@ function DM({navigation}) {
     <LinearGradient
       colors={['#FFFFFF', '#BCE3FF']} 
       style={styles.viewmain}>
+        
         <View style={styles.headerProfile}>
           <Text style={styles.textProfil}>Moj profil</Text>
         </View>
-        <Image source={require('./components/settings.png')} style={styles.settingsIcon} />
+        <TouchableOpacity onPress={() => navigation.navigate('Postavke')}>
+          <Image source={require('./components/settings.png')} style={styles.settingsIcon} />
+        </TouchableOpacity>
         <View style={styles.profileImageContainer}>
           <Text style={styles.profileImage}>Slika profila</Text>
         </View>
@@ -34,6 +37,48 @@ function DM({navigation}) {
 
 
 
+        <View style={styles.containerProfil}>
+      <View style={styles.imageContainerProfil}>
+        <Image source={require('./components/vozac.png')} style={styles.imageProfil} />
+        
+        <View style={styles.containerStar}>
+          <Image source={require('./components/star.png')} style={styles.starIcon} />
+          <Text style={styles.imageTextProfil}>4.1/5.0</Text>
+      </View>
+      </View>
+      <View style={styles.imageContainerProfil}>
+        <Image source={require('./components/putnik.png')} style={styles.imageProfil} />
+        <View style={styles.containerStar}>
+          <Image source={require('./components/star.png')} style={styles.starIcon} />
+          <Text style={styles.imageTextProfil}>4.8/5.0</Text>
+      </View>
+      </View>
+    </View>
+
+
+    <View style={styles.containerProfil2}>
+    <TouchableOpacity onPress={() => navigation.navigate('ProšleVožnje')}>
+      <View style={styles.redProfil}>
+        <Text style={styles.tekstProfil}>Prošle vožnje</Text>
+        <Image source={require('./components/strelica.png')} style={styles.strelicaProfil} />
+      </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('MojiPrijatelji')}>
+      <View style={styles.redProfil}>
+        <Text style={styles.tekstProfil}>Moji prijatelji</Text>
+        <Image source={require('./components/strelica.png')} style={styles.strelicaProfil} />
+      </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('BivšiSuvozači')}>
+      <View style={styles.redProfil}>
+        <Text style={styles.tekstProfil}>Bivši suvozači</Text>
+        <Image source={require('./components/strelica.png')} style={styles.strelicaProfil} />
+      </View>
+      </TouchableOpacity>
+    </View>
+
+    
+      
 
       {/*FOOTER --------------------------------------------------------------------------*/}
       <View style={styles.Footer}> 
