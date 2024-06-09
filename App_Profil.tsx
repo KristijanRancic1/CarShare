@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function DM({navigation}) {
+  const [username, setUsername] = useState('');
+
+  useEffect(() => {
+    const loadUsername = async () => {
+      const storedUsername = await AsyncStorage.getItem('username');
+      if (storedUsername) {
+        setUsername(storedUsername);
+      }
+    };
+
+    loadUsername();
+  }, []);
   return (
     <LinearGradient
       colors={['#FFFFFF', '#D9EBF8']} 
@@ -16,7 +29,7 @@ function DM({navigation}) {
           <Text style={styles.profileImage}>Slika profila</Text>
         </View>
         <View style={styles.profileImageContainer}>
-          <Text style={styles.ImePrezime}>Ime Prezime</Text>
+          <Text style={styles.ImePrezime}>{username}</Text>
         </View>
 
       {/*FOOTER --------------------------------------------------------------------------*/}

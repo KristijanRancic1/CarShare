@@ -1,13 +1,29 @@
 import React, { useState } from 'react';
 import { Alert, Image, Pressable, SafeAreaView, Switch, Text, TextInput, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { useNavigation } from '@react-navigation/native'; 
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from './styles';
+import { loginUser } from './apiService';
 const logo = require("./components/auticikona-Active.png");
 
 export default function LoginForm() {
   const [click, setClick] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigation = useNavigation();
+
+  const handleLogin = async () => {
+    try {
+      const response = await loginUser(username, password); 
+      await AsyncStorage.setItem('username', username);
+      await AsyncStorage.setItem('password', password);
+      Alert.alert('Login Successful', `Welcome, ${username}!`);
+      navigation.navigate('Home');
+    } catch (error) {
+      Alert.alert('Login Failed', error.message);
+    }
+  };
 
   return (
     <LinearGradient
@@ -31,7 +47,7 @@ export default function LoginForm() {
             placeholder='LOZINKA' 
             secureTextEntry 
             value={password} 
-            onChangeText={setPassword} 
+            onChangeText={setPassword}
             autoCorrect={false}
             autoCapitalize='none' 
           />
@@ -53,6 +69,7 @@ export default function LoginForm() {
         <View style={styles.buttonView}>
           <Pressable 
             style={styles.button} 
+            onPress={handleLogin}
           >
             <Text style={styles.buttonText}>LOGIN</Text>
           </Pressable>

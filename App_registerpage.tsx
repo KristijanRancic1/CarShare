@@ -1,17 +1,6 @@
 import React, { useState } from 'react';
-import {
-  Alert,
-  Image,
-  Pressable,
-  SafeAreaView,
-  ScrollView,
-  KeyboardAvoidingView,
-  Text,
-  TextInput,
-  View,
-  Platform
-} from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Import useNavigation
+import {Alert,Image,Pressable,SafeAreaView,ScrollView,KeyboardAvoidingView,Text,TextInput,View,Platform} from 'react-native';
+import { useNavigation } from '@react-navigation/native'; 
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './stylesRegister';
 import { registerUser } from './apiService';
@@ -47,7 +36,7 @@ export default function LoginForm() {
       style={styles.viewmain}
     >
       <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        behavior={Platform.OS === "android" ? "padding" : "height"}
         style={styles.keyboardAvoidingContainer}
       >
         <ScrollView contentContainerStyle={styles.scrollContainer}>
