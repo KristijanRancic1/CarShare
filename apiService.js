@@ -42,3 +42,17 @@ export const loginUser = async (username, password) => {
     throw error;
   }
 };
+
+export const loginUserData = async (username, password) => {
+  try {
+    const response = await axios.post(`${API_URL}UserData`, {
+      username,
+      password,
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error('Error logging in: ', error);
+    throw error;
+  }
+};

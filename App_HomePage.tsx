@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 const HomePage = ({ navigation }) => {
   const [activeOption, setActiveOption] = useState('');
+
+  const [username, setUsername] = useState('');
+
+  useEffect(() => {
+    const loadUsername = async () => {
+      const storedUsername = await AsyncStorage.getItem('username');
+      if (storedUsername) {
+        setUsername(storedUsername);
+      }
+    };
+
+    loadUsername();
+  }, []);
 
   const handleOptionClick = (option) => {
     setActiveOption(option);    };
@@ -27,7 +41,7 @@ const HomePage = ({ navigation }) => {
     >
       <View style={styles.header}>
         <Image source={require('./components/kalendarikona.png')} style={styles.kalendar} />
-        <Text style={styles.text}>Bok, Ivan!</Text>
+        <Text style={styles.text}>Bok, {username}!</Text>
         <TouchableOpacity onPress={() => navigation.navigate('Obavijesti')}>
         <Image source={require('./components/obavijestiikona.png')} style={styles.obavijesti} />
         </TouchableOpacity>
