@@ -19,7 +19,7 @@ function DM({navigation}) {
   }, []);
   return (
     <LinearGradient
-      colors={['#FFFFFF', '#D9EBF8']} 
+      colors={['#FFFFFF', '#BCE3FF']} 
       style={styles.viewmain}>
         <View style={styles.headerProfile}>
           <Text style={styles.textProfil}>Moj profil</Text>
@@ -31,6 +31,9 @@ function DM({navigation}) {
         <View style={styles.profileImageContainer}>
           <Text style={styles.ImePrezime}>{username}</Text>
         </View>
+
+
+
 
       {/*FOOTER --------------------------------------------------------------------------*/}
       <View style={styles.Footer}> 

@@ -3,13 +3,59 @@ import { Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 
+
+
+
 function DM({navigation}) {
   return (
     <LinearGradient
-      colors={['#FFFFFF', '#D9EBF8']} 
+      colors={['#FFFFFF', '#BCE3FF']} 
       style={styles.viewmain}
     >
-      <Text style={styles.text}>STATISTIKE</Text> 
+
+    <View style={styles.obavijestiView}>
+          <Text style={styles.obavijestiText}>Statistika</Text>
+    </View>
+     
+
+    <View style={styles.ciljeviView}>
+  <Text style={styles.ciljeviText}>Ostvareni ciljevi</Text>
+  <TouchableOpacity onPress={() => navigation.navigate('DodajCilj')} style={styles.ciljButton}>
+  <Image source={require('./components/plus.png')} style={styles.plusImage} />
+  </TouchableOpacity>
+</View>
+
+    <View style={styles.boxContainerStatistika}>
+        
+        <View style={styles.boxStatistika}>
+          <View style={styles.boxHeaderStatistika}>
+            <Image source={require('./components/turtle.png')} style={styles.boxIcon} />
+            <Text style={styles.boxTitleStatistika}>8 kornjača</Text>
+          </View>
+          <Text style={styles.boxTextStatistika}>spašeno</Text>
+        </View>
+
+        <View style={styles.boxStatistika}>
+          <View style={styles.boxHeaderStatistika}>
+            <Image source={require('./components/money.png')} style={styles.boxIcon} />
+            <Text style={styles.boxTitleStatistika}>2400€</Text>
+          </View>
+          <Text style={styles.boxTextStatistika}>ušteđeno</Text>
+        </View>
+      </View>
+
+      <View style={styles.aktivnostiView}>
+          <Text style={styles.ciljeviText}>Pregled aktivnosti</Text>
+     </View>
+
+     <View style={styles.statistikaGraf}>
+        <Image
+          source={require('./components/graf.png')}
+          style={styles.statistikaGrafimage}
+          resizeMode="contain"
+        />
+      </View>
+    
 
       {/*FOOTER --------------------------------------------------------------------------*/}
       <View style={styles.Footer}> 

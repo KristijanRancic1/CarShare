@@ -15,6 +15,8 @@ import ObavijestiSelected1 from './App_Obavijest_selected_preview1';
 import OvavijestiSelected2 from './App_Obavijest_selected_preview2';
 import LoginTemp from './App_loginpage';
 import RegisterTemp from './App_registerpage';
+import DodajCilj from './App_DodajCilj';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +38,7 @@ const AppNavigator = () => {
         <Stack.Screen name="ObavijestiSelected2" component={OvavijestiSelected2}/>
         <Stack.Screen name="LoginTemp" component={LoginTemp}/>
         <Stack.Screen name="RegisterTemp" component={RegisterTemp}/>
+        <Stack.Screen name="DodajCilj" component={DodajCilj}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
