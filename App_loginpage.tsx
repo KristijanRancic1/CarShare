@@ -75,8 +75,11 @@ export default function LoginForm() {
           </Pressable>
         </View>
 
-        <Text style={styles.footerText}>Nemate korisnički račun?
-          <Text style={styles.signup}>  Registrirajte se</Text>
+         <Text style={styles.footerText}>
+          Nemate korisnički račun?
+          <Pressable onPress={() => navigation.navigate('RegisterTemp')}> 
+            <Text style={styles.signup}> Registrirajte se</Text>
+          </Pressable>
         </Text>
       </SafeAreaView>
     </LinearGradient>

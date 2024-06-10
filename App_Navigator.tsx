@@ -28,7 +28,7 @@ const Stack = createNativeStackNavigator();
 const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{animation:'fade'}} initialRouteName="Home">
+      <Stack.Navigator screenOptions={{animation:'fade'}} initialRouteName="LoginTemp">
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Kamo" component={Kamo} />
         <Stack.Screen name="DM" component={DM}/>

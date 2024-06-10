@@ -78,7 +78,7 @@ const HomePage = ({ navigation }) => {
 
       {/*FOOTER --------------------------------------------------------------------------*/}
       <View style={styles.Footer}> 
-      <TouchableOpacity onPress={() => navigation.navigate('LoginTemp')}>
+      <TouchableOpacity onPress={() => navigation.navigate('DM')}>
       <Image source={require('./components/chatikona_default.png')} style={styles.FooterIkone35x35} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Event')}>
@@ -87,7 +87,7 @@ const HomePage = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate('Home')}>
       <Image source={require('./components/auticikona-Active.png')} style={styles.FooterIkoneCAR} />
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('RegisterTemp')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Statistika')}>
       <Image source={require('./components/analiticsikona.png')} style={styles.FooterIkone35x35} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('MojProfil')}>
